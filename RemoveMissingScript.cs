@@ -18,8 +18,8 @@ public class RemoveMissingScript : MonoBehaviour
 
             for (var i = prefabRoot.transform.childCount - 1; i >= 0; i--)
             {
-                if (prefabRoot.transform.GetChild(0).gameObject.name.Contains("Missing"))
-                    Object.DestroyImmediate(prefabRoot.transform.GetChild(0).gameObject);
+                if (prefabRoot.transform.GetChild(i).gameObject.name.Contains("Missing"))
+                    Object.DestroyImmediate(prefabRoot.transform.GetChild(i).gameObject);
             }
         }
     }
